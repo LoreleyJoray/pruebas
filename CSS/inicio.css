@@ -1,0 +1,194 @@
+/* 
+ 
+Daniela Cattoni: HTML y CSS - MAIN de INICIO.
+
+Loreley Joray: HTML y CSS - MAIN de QUIENES SOMOS.
+
+Jimena Zitaglia: Reseteo CSS. HTML y CSS - Header y Footer ambas páginas.
+
+Luisina Gratti: HEAD ambas páginas.
+
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+
+
+.navbar {
+    height: 60 px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: #710671 !important; /* Usa !important para asegurar que se aplique */
+  }
+  #navbarText{
+    width: 50vw;
+    padding-top: 10px;
+    justify-content:space-around;
+
+  }
+
+  ul.navbar-nav .me-auto .mb-2 .mb-lg-0{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .navbar-toggler{
+    background-color: #ad10ad;
+  }
+  a.nav-link:hover {
+    color: #ad10ad;
+  }
+
+  .navbar-nav .nav-link {
+    color: #ffffff; /* LETRAS DE LA BARRA */
+  }
+
+  /* Cambia el color de las letras del texto de la barra de navegación (navbar-text) */
+.navbar-text {
+    color: rgb(255, 239, 251); /* Reemplaza #fedcba con el color que desees */
+
+  }
+  
+  /* Cambia el color de las letras del enlace activo */
+  .navbar-nav .nav-link.active {
+    color: #fedcba;/* Reemplaza #ff0000 con el color que desees */
+  }
+  .navbar-brand img {
+    height: 50px; /* Ajusta el valor según tus necesidades */
+  }
+  
+
+    /* Daniela Cattoni */
+h1 {
+    color:rgb(255, 225, 230); 
+    font-size: 30px;
+    font-style: normal;
+    font-weight:700 ;
+    letter-spacing: 5px;
+    border-radius: 10px;
+   /* width: 90%;*/
+    margin: 12vh 0px 30px 0px;
+    text-align: center;  
+    outline-style: double; 
+    background-color:  #710671;
+    }
+
+#marginp {margin:20px 0px 20px 0px;
+    }
+
+body {font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    background-color:rgb(253, 249, 230);
+    margin: 30px;
+    }
+
+h2 {font-family: "Raleway", sans-serif; 
+    color: #ad10ad;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px; 
+    border: 1px solid #ad10ad;
+    padding: 10px;
+    background-color: rgb(255, 239, 251);
+    font-weight: bold;
+    }
+
+h3 {
+    text-decoration: underline;
+    font-size: 20px; 
+    letter-spacing: 5px;
+    color: #ad10ad
+    }
+    
+
+
+.definicion {display: flex;
+    flex-direction: column;
+    border-radius: 10px; 
+    border: 1px solid #ad10ad;
+    padding: 5px;
+    }
+
+p {text-align: justify;
+   line-height: 2;
+   padding: 10px;
+    }
+
+.ciclo {border-radius: 10px; 
+    border: 1px solid #ad10ad;
+    padding: 5px;
+    }
+
+.tabla {display: flex;
+       flex-direction: column;
+       padding: 05px;
+        }
+
+.etapa1 {padding: 10px;border: solid #710671;}
+.etapa2 {padding: 10px;border: solid #710671;}
+.etapa3 {padding: 10px;border: solid #710671;}
+
+.femicidio {
+    display: flex; 
+    flex-direction: column;
+    border-radius: 10px; 
+    border: 1px solid #ad10ad;
+    padding: 10px;
+    }
+    .femicidio p{
+        padding: 10px;
+    }
+
+.foto1 {padding: 5px; width:20rem;
+    border-radius: 20px;
+    }
+
+.fotomano {padding: 5px; width: 20rem;
+    border-radius: 20px;
+    }
+
+.flecha {
+    width: 20px;
+    margin: 2vh;
+    }
+
+footer{
+    font-size: 12px;
+    text-align: center;
+    color:rgb(253, 249, 230);
+    background-color: #ad10ad;
+    display:block;
+    padding-bottom: 20px;
+    }
+    
+ #margincopy {
+    padding: 10px 5px;
+    }
+    
+@media screen and (min-width: 480px) {
+/*.media {background-color: aqua;}*/
+.definicion {flex-direction: column;}
+.femicidio {flex-direction: column;}
+.foto1 {width: 30rem;}
+.fotomano {width: 30rem;}
+}
+
+@media screen and (min-width: 768px) {
+/*.media {background-color: rgb(60, 10, 179)};*/
+.foto1 {width: 30rem;}
+.fotomano {width: 30rem;}
+.definicion {flex-direction: row;}
+.femicidio {flex-direction: row;}
+.tabla  {flex-direction: row;}
+}
+
+@media screen and (min-width: 1024px) {
+/*.media {background-color: rgb(0, 5, 5);} */
+.foto1 {width: 40rem;}
+.fotomano {width: 40rem;}
+.definicion {flex-direction: row;}
+.femicidio {flex-direction: row;}
+.tabla  {flex-direction: row;}
+ }
